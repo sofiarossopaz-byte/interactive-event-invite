@@ -1,4 +1,5 @@
 
+
 // Select HTML elements
 const rsvpForm = document.getElementById("rsvp-form");
 const emailInput = document.getElementById("email");
@@ -22,14 +23,12 @@ rsvpForm.addEventListener("submit", function(event) {
         confirmationMessage.style.color = "#ff4444";
         return;
     }
-
+    
     // Display personalized confirmation
-    if (attendance === "yes") {
+     if (attendance === 'yes') {
+    confirmationMessage.innerHTML = '🎉 Party on! We look forward to seeing you at the GIF Gala!';
 
-        confirmationMessage.textContent =
-            "🎉 You're on the guest list! Get ready for an epic GIF Gala!";
-
-        confirmationMessage.style.color = "#00ff99";
+     
 
     } else {
 
