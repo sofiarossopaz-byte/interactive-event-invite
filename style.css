@@ -1,0 +1,167 @@
+
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #360565;
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* HEADER */
+header {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #ff00ff;
+    font-size: 2.5rem;
+    text-shadow: 0 0 50px #ff00ff,
+                 0 0 50px #ff00ff,
+                 0 0 80px #ff00ff;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    color: #00ffff;
+    font-size: 2rem;
+    text-shadow: 0 0 10px #00ffff,
+                 0 0 20px #00ffff;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* EVENT DESCRIPTION */
+#event-description {
+    background: #1c0033;
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+#event-description h2 {
+    color: #00ff99;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #00ff99;
+}
+
+#event-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* RSVP SECTION */
+#rsvp-section {
+    background: #1c0033;
+    border: 2px solid #ff00ff;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+#rsvp-section h2 {
+    color: #00ff99;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px #00ff99;
+}
+
+/* FORM */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #00ffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    background: #10001f;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 12px #ff00ff;
+}
+
+/* SUBMIT BUTTON */
+button {
+    background: #ff00ff;
+    color: #ffffff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff00ff,
+                0 0 20px #ff00ff;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #00ffff;
+    color: #10001f;
+    box-shadow: 0 0 15px #00ffff,
+                0 0 30px #00ffff;
+    transform: scale(1.05);
+}
+
+/* CONFIRMATION MESSAGE */
+#confirmation-message {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #00ff99;
+    text-shadow: 0 0 10px #00ff99;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    color: #ff00ff;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    #event-description,
+    #rsvp-section {
+        padding: 20px;
+    }
+}

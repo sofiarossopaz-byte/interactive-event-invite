@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="You're invited to the GIF Gala! Dress up as your favorite GIF or meme and join the celebration.">
+
+    <title>GIF Gala | RSVP</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript File -->
+    <script src="actions.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>You're Invited to the GIF Gala: Where Memes Come to Life!</h1>
+        <h2>7/21/23</h2>
+    </header>
+
+    <main>
+
+        <!-- Event Description -->
+        <section id="event-description">
+
+            <h2>Get Ready to Go Viral!</h2>
+
+            <p>
+                Get ready for an epic night of laughter, creativity,
+                and internet culture! Dress up as your favorite GIF
+                or meme and bring your most iconic energy.
+                It's time to bring the internet to life!
+            </p>
+
+        </section>
+
+        <!-- RSVP Form -->
+        <section id="rsvp-section">
+
+            <h2>RSVP</h2>
+
+            <form id="rsvp-form">
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <!-- Attendance Field -->
+                <div class="form-group">
+                    <label for="attendance">Will you attend?</label>
+
+                    <select
+                        id="attendance"
+                        name="attendance"
+                        required
+                    >
+                        <option value="">Select your answer</option>
+                        <option value="yes">Yes, I'll be there!</option>
+                        <option value="no">Sorry, I can't make it.</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit RSVP</button>
+
+            </form>
+
+            <!-- Confirmation Message -->
+            <div
+                id="confirmation-message"
+                role="status"
+                aria-live="polite"
+            ></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>GIF Gala &copy; 2023 | Where Memes Come to Life!</p>
+    </footer>
+
+</body>
+
+</html>
