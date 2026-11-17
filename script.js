@@ -5,10 +5,16 @@ const emailInput = document.getElementById("email");
 const attendanceInput = document.getElementById("attendance");
 const confirmationMessage = document.getElementById("confirmation-message");
 
+// GIF background URLs
+const attendingGIF =
+    "https://media.giphy.com/media/l2JHPB58MjfV8W3K0/giphy.gif";
+
+const notAttendingGIF =
+    "https://media.giphy.com/media/JER2en0ZRiGUE/giphy.gif";
+
 // Handle form submission
 rsvpForm.addEventListener("submit", function(event) {
 
-    // Prevent page reload
     event.preventDefault();
 
     // Get form values
@@ -23,11 +29,11 @@ rsvpForm.addEventListener("submit", function(event) {
         return;
     }
 
-    // Check attendance response
+    // Display background and confirmation
     if (attendance === "yes") {
 
-        // Add GIF background to the body
-        document.body.classList.add("attending");
+        document.body.style.backgroundImage =
+            `url("${attendingGIF}")`;
 
         confirmationMessage.textContent =
             "🎉 You're on the guest list! Get ready for an epic GIF Gala!";
@@ -36,11 +42,11 @@ rsvpForm.addEventListener("submit", function(event) {
 
     } else {
 
-        // Remove GIF background
-        document.body.classList.remove("attending");
+        document.body.style.backgroundImage =
+            `url(https://media.giphy.com/media/JER2en0ZRiGUE/giphy.gif)`;
 
         confirmationMessage.textContent =
-            "Thanks for letting us know! We'll miss you at the GIF Gala!";
+            "😢 We'll miss you at the GIF Gala! Thanks for letting us know!";
 
         confirmationMessage.style.color = "#00ffff";
     }
@@ -49,3 +55,4 @@ rsvpForm.addEventListener("submit", function(event) {
     rsvpForm.reset();
 
 });
+
