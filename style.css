@@ -6,14 +6,39 @@
     box-sizing: border-box;
 }
 
+
+
+/* DEFAULT PAGE BACKGROUND */
 body {
     font-family: 'Arial', sans-serif;
-    background: #12004e;
+    background-color: #12004e;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #ffffff;
     text-align: center;
     min-height: 100vh;
     padding: 30px 20px;
+    transition: background-image 0.5s ease;
 }
+
+/* ATTENDING BACKGROUND */
+body.attending {
+    background-image: url("https://media.giphy.com/media/l2JHPB58MjfV8W3K0/giphy.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Keep content readable over the GIF */
+body.attending #event-description,
+body.attending #rsvp-section {
+    background: rgba(28, 0, 51, 0.85);
+    backdrop-filter: blur(5px);
+}
+
 
 /* HEADER */
 header {
